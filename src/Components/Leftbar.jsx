@@ -9,6 +9,7 @@ import SportsEsportsTwoToneIcon from "@mui/icons-material/SportsEsportsTwoTone";
 import CollectionsTwoToneIcon from "@mui/icons-material/CollectionsTwoTone";
 import VideocamTwoToneIcon from "@mui/icons-material/VideocamTwoTone";
 import CommentTwoToneIcon from "@mui/icons-material/CommentTwoTone";
+import pic1 from "../assets/pic1.jpeg";
 
 const Leftbar = () => {
   return (
@@ -18,11 +19,7 @@ const Leftbar = () => {
     >
       <div className="container flex flex-col justify-center gap-5 py-3 sticky top-14">
         <div className="userInfo flex items-center item">
-          <img
-            className=" w-7 h-7 rounded-full"
-            src="https://images.pexels.com/photos/15955854/pexels-photo-15955854.jpeg"
-            alt=""
-          />
+          <img className=" w-7 h-7 rounded-full" src={pic1} alt="" />
           <span className=" font-medium">Rize Enf</span>
         </div>
         <div className="item">
