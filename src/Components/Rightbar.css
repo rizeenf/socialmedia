@@ -1,0 +1,5 @@
+.items {
+  box-shadow: 9px 9px 26px -8px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 9px 9px 26px -8px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 9px 9px 26px -8px rgba(0, 0, 0, 0.51);
+}

@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <div className="w-screen h-screen text-white bg-blue-200 justify-center items-center flex ">
       <div className="w-1/2 h-2/3 flex rounded-md overflow-hidden">
-        <div className="left flex-1 bg-white p-20 ">
+        <div className="leftLogin flex-1 bg-white p-20 ">
           <h1 className=" text-5xl font-semibold">Welcome Sipaling social.</h1>
           <p className="my-10 font-light">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quo
@@ -21,7 +21,7 @@ const Login = () => {
             </button>
           </Link>
         </div>
-        <div className="right text-gray-500 flex-1 bg-white p-20 flex items-center justify-center flex-col gap-20">
+        <div className="text-gray-500 flex-1 bg-white p-20 flex items-center justify-center flex-col gap-20">
           <h1 className=" text-4xl font-semibold">Login</h1>
           <form className=" flex flex-col justify-center items-center gap-12">
             <input

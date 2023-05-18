@@ -11,17 +11,21 @@ import Navbar from "./Components/Navbar";
 import Leftbar from "./Components/Leftbar";
 import Rightbar from "./Components/Rightbar";
 import Profile from "./Components/Profile";
+import { useState } from "react";
 
 function App() {
   const currUser = true;
+  const [theme, setTheme] = useState("dark");
 
   const Layout = () => {
     return (
-      <div>
+      <div className={theme}>
         <Navbar />
         <div className="flex">
           <Leftbar />
-          <Outlet />
+          <div style={{ flex: 6 }}>
+            <Outlet />
+          </div>
           <Rightbar />
         </div>
       </div>

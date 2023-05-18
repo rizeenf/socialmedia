@@ -1,4 +1,4 @@
-.left {
+.leftLogin {
   background: linear-gradient(
       rgba(130, 124, 232, 0.5),
       rgba(242, 241, 255, 0.5)
@@ -6,4 +6,9 @@
     url("https://images.pexels.com/photos/15955854/pexels-photo-15955854.jpeg")
       center;
   background-size: cover;
+}
+
+.item {
+  display: flex;
+  gap: 16px;
 }
