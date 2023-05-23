@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Context/AuthContext";
 import "./Login.css";
 
 const Login = () => {
+  const { login } = useContext(AuthContext);
+
+  const handleLogin = () => {
+    login();
+  };
+
   return (
     <div className="w-screen h-screen text-white bg-blue-200 justify-center items-center flex ">
       <div className="w-1/2 h-2/3 flex rounded-md overflow-hidden">
@@ -34,7 +41,10 @@ const Login = () => {
               className=" border-b-2 py-2"
               placeholder="Password"
             />
-            <button className=" text-gray-600 bg-blue-200 cursor-pointer p-2 rounded-md hover:bg-blue-100 w-2/3">
+            <button
+              onClick={handleLogin}
+              className=" text-gray-600 bg-blue-200 cursor-pointer p-2 rounded-md hover:bg-blue-100 w-2/3"
+            >
               Login
             </button>
           </form>

@@ -14,7 +14,7 @@ const Navbar = () => {
   const { toggle, darkMode } = useContext(DarkModeContext);
 
   return (
-    <div className="  flex justify-between items-center p-2 px-5 sticky top-0 dark:bg-gray-800 dark:text-gray-200">
+    <div className="  flex justify-between items-center p-2 px-5 sticky top-0 dark:bg-gray-800 dark:text-gray-200 z-50">
       <div className="left flex justify-center items-center gap-8 ">
         <div className=" relative">
           <span className=" font-bold text-2xl text-blue-600 dark:text-blue-100">
