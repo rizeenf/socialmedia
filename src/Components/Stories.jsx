@@ -39,7 +39,7 @@ const Stories = () => {
   const { currUser } = useContext(AuthContext);
 
   return (
-    <div className=" flex flex-row gap-3 overflow-hidden">
+    <div className=" flex flex-row gap-3 overflow-hidden mb-8">
       <div className=" flex flex-row relative ">
         <img
           src="https://images.pexels.com/photos/16903397/pexels-photo-16903397/free-photo-of-la-soltera-dominante.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

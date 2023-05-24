@@ -24,9 +24,9 @@ const Navbar = () => {
         </div>
         <HomeOutlinedIcon />
         {darkMode ? (
-          <WbSunnyOutlinedIcon onClick={toggle} />
+          <WbSunnyOutlinedIcon onClick={toggle} className=" cursor-pointer" />
         ) : (
-          <ModeNightOutlinedIcon onClick={toggle} />
+          <ModeNightOutlinedIcon onClick={toggle} className=" cursor-pointer" />
         )}
         <GridViewOutlinedIcon />
         <div className="search flex justify-center items-center gap-3 border rounded-md p-1 border-blue-200 bg-white dark:bg-transparent">

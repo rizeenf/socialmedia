@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContext";
 import "./Login.css";
 
@@ -45,7 +45,7 @@ const Login = () => {
               onClick={handleLogin}
               className=" text-gray-600 bg-blue-200 cursor-pointer p-2 rounded-md hover:bg-blue-100 w-2/3"
             >
-              Login
+              <Link to="/">Login</Link>
             </button>
           </form>
         </div>
