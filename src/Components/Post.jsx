@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import InsertCommentOutlinedIcon from "@mui/icons-material/InsertCommentOutlined";
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
+import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
+import Comments from "./Comments";
 
 const Post = ({ post }) => {
+  const [likes, setLikes] = useState(false);
+  const [commentOpened, setCommentOpened] = useState(false);
+
   return (
     <div className=" container items p-4 rounded-lg dark:bg-gray-800 dark:text-gray-200 flex flex-col gap-4 scroll-smooth">
       <div className="user flex flex-row justify-between ">
@@ -30,19 +35,26 @@ const Post = ({ post }) => {
         />
       </div>
       <div className="interaction flex flex-row gap-5">
-        <div className="interaction-items cursor-pointer flex flex-row gap-2">
-          <FavoriteBorderOutlinedIcon />
-          <span>Likes</span>
+        <div
+          className="interaction-items cursor-pointer flex flex-row gap-2"
+          onClick={() => setLikes(!likes)}
+        >
+          {likes ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
+          <span>13 Likes</span>
         </div>
-        <div className="interaction-items cursor-pointer flex flex-row gap-2">
+        <div
+          className="interaction-items cursor-pointer flex flex-row gap-2"
+          onClick={() => setCommentOpened(!commentOpened)}
+        >
           <InsertCommentOutlinedIcon />
-          <span>Comment</span>
+          <span>4 Comment</span>
         </div>
         <div className="interaction-items cursor-pointer flex flex-row gap-2">
           <ReplyOutlinedIcon />
           <span>Share</span>
         </div>
       </div>
+      {commentOpened && <Comments />}
     </div>
   );
 };
