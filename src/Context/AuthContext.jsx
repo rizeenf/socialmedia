@@ -10,9 +10,10 @@ export const AuthContextProvider = ({ children }) => {
 
   const login = () => {
     setCurrUser({
-      id: 1,
+      id: 1001,
       name: "Rize Enf",
-      profilePic: { pic1 },
+      profilePic:
+        "https://images.pexels.com/photos/16903397/pexels-photo-16903397/free-photo-of-la-soltera-dominante.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     });
   };
 

@@ -5,7 +5,10 @@ import pic2 from "../assets/pic2.jpeg";
 
 const Rightbar = () => {
   return (
-    <div style={{ flex: 3 }} className=" dark:bg-gray-700 dark:text-gray-200">
+    <div
+      style={{ flex: 3 }}
+      className=" dark:bg-gray-700 dark:text-gray-200 sm:hidden md:hidden"
+    >
       <div className="container flex flex-col justify-center gap-5 p-3 sticky top-14 ">
         <div className="items dark:bg-gray-800 flex flex-col justify-center p-5 rounded-md">
           <span className=" text-gray-400 py-2">Sugestions for you</span>

@@ -15,7 +15,7 @@ const Leftbar = () => {
   return (
     <div
       style={{ flex: 2 }}
-      className="px-4 dark:bg-gray-800 dark:text-gray-200"
+      className="px-4 dark:bg-gray-800 dark:text-gray-200 sm:hidden md:hidden"
     >
       <div className="container flex flex-col justify-center gap-5 py-3 sticky top-14">
         <div className="userInfo flex items-center item">

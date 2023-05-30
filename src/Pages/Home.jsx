@@ -4,7 +4,7 @@ import Stories from "../Components/Stories";
 
 const Home = () => {
   return (
-    <div className="dark:bg-gray-700 dark:text-gray-100 p-8 min-h-full scroll-smooth">
+    <div className="dark:bg-gray-700 dark:text-gray-100 p-8 min-h-full scroll-smooth sm:p-3 ">
       <Stories />
       <Posts />
     </div>

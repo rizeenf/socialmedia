@@ -5,6 +5,7 @@ import InsertCommentOutlinedIcon from "@mui/icons-material/InsertCommentOutlined
 import ReplyOutlinedIcon from "@mui/icons-material/ReplyOutlined";
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 import Comments from "./Comments";
+import { Link } from "react-router-dom";
 
 const Post = ({ post }) => {
   const [likes, setLikes] = useState(false);
@@ -14,13 +15,18 @@ const Post = ({ post }) => {
     <div className=" container items p-4 rounded-lg dark:bg-gray-800 dark:text-gray-200 flex flex-col gap-4 scroll-smooth">
       <div className="user flex flex-row justify-between ">
         <div className="userInfo flex flex-row gap-3 justify-center items-center">
-          <img
-            src={post.profilePic}
-            className="w-8 h-8 rounded-full object-cover"
-            alt=""
-          />
+          <Link to={`/profile/${post.userId}`}>
+            <img
+              src={post.profilePic}
+              className="w-8 h-8 rounded-full object-cover"
+              alt=""
+            />
+          </Link>
+
           <div className="flex flex-col">
-            <span>{post.name}</span>
+            <Link to={`/profile/${post.userId}`}>
+              <span>{post.name}</span>
+            </Link>
             <span className=" text-sm font-extralight">1 min ago</span>
           </div>
         </div>
