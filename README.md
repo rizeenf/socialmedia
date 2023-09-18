@@ -1,5 +1,9 @@
 # socialmedia
 
+# You can try this app by open this website :
+
+https://rize-socialmedia.vercel.app/
+
 Basic social media landing page, using some framework/library such as:
   - ReactJS
   - Tailwind css
