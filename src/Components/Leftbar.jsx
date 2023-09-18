@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PeopleAltTwoToneIcon from "@mui/icons-material/PeopleAltTwoTone";
 import Groups3TwoToneIcon from "@mui/icons-material/Groups3TwoTone";
 import StorefrontTwoToneIcon from "@mui/icons-material/StorefrontTwoTone";
@@ -66,6 +67,7 @@ const Leftbar = () => {
         </div>
         <hr />
         <span className=" text-sm text-gray-500">Others</span>
+        <Link to="../login">Logout</Link>
       </div>
     </div>
   );
