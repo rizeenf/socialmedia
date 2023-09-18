@@ -25,13 +25,19 @@ const Navbar = () => {
             </span>
           </span>
         </div>
-        <Link to={`/`}>
+        <Link to={`../`}>
           <HomeOutlinedIcon />
         </Link>
         {darkMode ? (
-          <WbSunnyOutlinedIcon onClick={toggle} className=" cursor-pointer" />
+          <WbSunnyOutlinedIcon
+            onClick={toggle}
+            className=" cursor-pointer transition-all duration-500"
+          />
         ) : (
-          <ModeNightOutlinedIcon onClick={toggle} className=" cursor-pointer" />
+          <ModeNightOutlinedIcon
+            onClick={toggle}
+            className=" cursor-pointer transition-all duration-500"
+          />
         )}
         <div className=" sm:hidden md:hidden">
           <GridViewOutlinedIcon />
@@ -46,7 +52,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="right flex justify-center items-center gap-8 ">
-        <Link to={`/profile/1001`}>
+        <Link to={`../profile/1001`}>
           <Person2OutlinedIcon />
         </Link>
         <div className=" relative sm:hidden md:hidden">
